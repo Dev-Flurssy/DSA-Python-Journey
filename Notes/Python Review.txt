@@ -1,0 +1,1 @@
+Variable is a space in a computer that is used to store values the type of varaible is defined by the data it contains 
