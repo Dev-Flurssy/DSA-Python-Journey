@@ -198,7 +198,7 @@ The repository includes complexity analysis for all major data structures and al
 
 | Topic | Notes | Code | Practice | Revision |
 |---------|---------|---------|---------|---------|
-| Arrays | ✅ | ✅ | ✅ | ✅ |
+| Arrays | ✅ | ⬜ | ⬜ | ⬜ |
 | Strings | ⬜ | ⬜ | ⬜ | ⬜ |
 | Linked Lists | ⬜ | ⬜ | ⬜ | ⬜ |
 | Stacks | ⬜ | ⬜ | ⬜ | ⬜ |
