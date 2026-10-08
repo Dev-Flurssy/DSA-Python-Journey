@@ -29,9 +29,65 @@ Solve complex problems effectively
 CLASSIFICATION OF DATA STRUCTURES
 
 Data structures are mainly divided into:
+No. These are two different classifications.
 
-Linear Data Structures
-Non-Linear Data Structures
+Think of it this way:
+
+Data Structures │ 
+├── Primitive v
+├── Non-Primitive 
+│ └── Linear vs Non-Linear
+
+PRIMITIVE DATA STRUCTURES
+
+Primitive data structures are basic built-in data types provided by a programming language.
+
+Examples:
+
+Integer (int)
+Float
+Character (char)
+Boolean (bool)
+list
+Set
+Dictionary
+Tuple
+
+Python examples:
+age = 20          # int
+height = 1.75     # float
+grade = 'A'       # str (character/string)
+is_student = True # bool
+
+
+Characteristics:
+
+Store a single value
+Directly supported by the language
+Simple and fundamental
+
+------------------------------------------------------------ 
+NON-PRIMITIVE DATA STRUCTURES
+
+Non-primitive data structures are built using primitive data types.
+They can store multiple values and relationships between values.
+
+Examples:
+
+Array
+List
+Linked List
+Stack
+Queue
+Tree
+Graph
+Hash Table
+
+Characteristics:
+
+Store collections of data
+More complex
+Used to organize information efficiently
 
 ------------------------------------------------------------ 
 LINEAR DATA STRUCTURES
@@ -363,4 +419,178 @@ Algorithm A step-by-step procedure for solving a problem.
 Time Complexity The amount of time an algorithm takes as input size increases.
 Space Complexity The amount of memory an algorithm uses.
 
+------------------------------------------------------------
+COMMON OPERATIONS IN DATA STRUCTURES
 
+Operations are actions performed on data stored inside a data structure.
+
+Most data structures support the following operations:
+Traversal
+Insertion
+Deletion
+Searching
+Sorting
+Merging
+Updating
+Accessing
+
+------------------------------------------------------------
+TRAVERSAL
+
+Traversal is the process of visiting each element in a data structure exactly once.
+
+Purpose:
+Display data
+Process data
+Count elements
+
+Example:
+Array:[10, 20, 30, 40]
+
+Traversal Output:
+10
+20
+30
+40
+
+Applications:
+Printing values
+Finding sums
+Data analysis
+
+------------------------------------------------------------
+INSERTION
+
+Insertion is the process of adding a new element into a data structure.
+
+Example:
+Before: [10, 20, 40]
+Insert: 30
+After: [10, 20, 30, 40]
+
+Applications:
+Adding a new student
+Adding a product
+Saving a new record
+
+------------------------------------------------------------
+DELETION
+
+Deletion is the process of removing an existing element from a data structure.
+
+Example:
+Before: [10, 20, 30, 40]
+Delete: 30
+After: [10, 20, 40]
+
+Applications:
+Removing a user
+Cancelling an order
+Deleting a file
+
+------------------------------------------------------------
+SEARCHING
+
+Searching is the process of finding a specific element in a data structure.
+
+Questions Answered:
+Does the element exist?
+Where is the element located?
+
+Example:
+Array: [10, 20, 30, 40]
+Search: 30
+Result: Found at Index 2
+
+Applications:
+Finding a name
+Looking up a phone number
+Searching a database
+
+------------------------------------------------------------
+SORTING
+
+Sorting is the process of arranging data in a particular order.
+
+Types:
+Ascending Order: [10, 20, 30, 40]
+Descending Order: [40, 30, 20, 10]
+
+Applications:
+Ranking students
+Organizing products
+Preparing data for searching
+
+------------------------------------------------------------
+MERGING
+
+Merging is the process of combining two or more data structures into a single structure.
+
+Example:
+Array 1: [10, 20]
+Array 2: [30, 40]
+Merged Array: [10, 20, 30, 40]
+
+Applications:
+Combining records
+Merging datasets
+Integrating systems
+
+------------------------------------------------------------
+UPDATING
+
+Updating is the process of modifying an existing element in a data structure.
+
+Example:
+Before: [10, 20, 30]
+Update: 20 → 25
+After:[10, 25, 30]
+
+Applications:
+Updating account balances
+Editing profiles
+Changing product prices
+
+------------------------------------------------------------
+ACCESSING
+
+Accessing is the process of retrieving an element from a data structure.
+
+Example:
+Array: [10, 20, 30, 40]
+Access Index: 2
+Result: 30
+
+Applications:
+
+Reading stored data
+Displaying information
+Processing records
+
+------------------------------------------------------------
+EXAMPLE USING AN ARRAY
+
+Array: [10, 20, 30, 40]
+
+Access: Get element at index 1
+Result: 20
+
+Search: Find 30
+Result: Found at index 2
+
+Insert: Insert 50
+Result: [10, 20, 30, 40, 50]
+
+Delete: Remove 20
+Result: [10, 30, 40, 50]
+
+Update: Change 30 to 35
+Result: [10, 35, 40, 50]
+
+Sort: Arrange values
+Result: [10, 35, 40, 50]
+
+Traverse: Visit all elements
+Result: 10, 35, 40, 50
+
+------------------------------------------------------------
