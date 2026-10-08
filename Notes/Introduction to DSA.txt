@@ -1,0 +1,366 @@
+DATA STRUCTURE
+
+A data structure is a way of organizing, storing, and managing data so that it can be accessed, modified, and processed efficiently.
+Data structures help computers store large amounts of data and perform operations quickly.
+Think of a data structure as a container that stores data in a specific way.
+
+Examples:
+Array
+Linked List
+Stack
+Queue
+Tree
+Graph
+Hash Table
+
+------------------------------------------------------------ 
+WHY DATA STRUCTURES ARE IMPORTANT
+
+Data structures help us:
+
+Store data efficiently
+Access data quickly
+Search data faster
+Reduce memory usage
+Improve program performance
+Solve complex problems effectively
+
+------------------------------------------------------------ 
+CLASSIFICATION OF DATA STRUCTURES
+
+Data structures are mainly divided into:
+
+Linear Data Structures
+Non-Linear Data Structures
+
+------------------------------------------------------------ 
+LINEAR DATA STRUCTURES
+
+A linear data structure stores elements sequentially.
+Each element is connected to the next element in a single line.
+
+Characteristics:
+Easy to traverse
+Elements are arranged one after another
+Suitable for sequential processing
+
+Examples:
+Array
+String
+Linked List
+Stack
+Queue
+
+------------------------------------------------------------ 
+ARRAY
+
+An array is a collection of elements of the same data type stored in contiguous memory locations.
+Each element is accessed using an index.
+
+Example:Array = [10, 20, 30, 40, 50]
+
+Index:
+0 → 10
+1 → 20
+2 → 30
+3 → 40
+4 → 50
+
+Advantages:
+Fast access using index
+Easy to implement
+
+Disadvantages:
+Fixed size
+Costly insertion and deletion
+
+Applications:
+Storing marks
+Storing temperatures
+Matrices and tables
+
+------------------------------------------------------------ 
+STRING
+
+A string is a sequence of characters used to represent text.
+
+Example: "HELLO"
+Characters: H E L L O
+
+Common Operations:
+Accessing characters
+Searching text
+Comparing strings
+Reversing text
+Modifying text
+
+Applications:
+Text processing
+Search engines
+Password validation
+File names
+
+------------------------------------------------------------ 
+LINKED LIST
+
+A linked list is a collection of nodes connected together.
+Each node contains:
+Data
+Reference (Pointer) to the next node
+
+Example: 10 → 20 → 30 → 40
+
+Advantages:
+Dynamic size
+Easy insertion
+Easy deletion
+
+Disadvantages:
+Extra memory for pointers
+Slower access compared to arrays
+
+Applications:
+Music playlists
+Browser history
+Undo functionality
+
+------------------------------------------------------------ 
+STACK
+
+A stack is a linear data structure that follows the LIFO principle.
+LIFO = Last In First Out
+The last element inserted is the first element removed.
+
+Example:
+Stack: Top 30 20 10
+
+Operations:
+Push → Add element
+Pop → Remove element
+Peek/Top → View top element
+
+Applications:
+Function calls
+Undo operations
+Expression evaluation
+Browser navigation
+
+Real-life example:
+A stack of plates.
+The last plate placed on top is removed first.
+
+
+------------------------------------------------------------ 
+QUEUE
+
+A queue is a linear data structure that follows the FIFO principle.
+FIFO = First In First Out
+The first element inserted is the first element removed.
+
+Example: Front → 10 20 30 40 ← Rear
+
+Operations:
+Enqueue → Insert element
+Dequeue → Remove element
+Front → View first element
+
+Applications:
+Printer queue
+CPU scheduling
+Ticket booking systems
+Task processing
+
+Real-life example:
+People standing in a line.
+The first person in line is served first.
+
+------------------------------------------------------------ 
+NON-LINEAR DATA STRUCTURES
+
+A non-linear data structure stores data in a hierarchical or network-like structure.
+Elements are not arranged sequentially.
+
+Characteristics:
+
+Multiple relationships between elements
+Suitable for complex data representation
+Efficient for hierarchical data
+
+Examples:
+Hash Table
+Tree
+Heap
+Graph
+
+------------------------------------------------------------ 
+HASH TABLE
+
+A hash table stores data as key-value pairs.
+A hash function converts a key into an index where the value is stored.
+
+Example:
+Name → Age
+John → 20
+Mary → 25
+Alex → 18
+
+Advantages:
+Very fast searching
+Fast insertion
+Fast deletion
+
+Applications:
+Dictionaries
+Caching
+Database indexing
+Password lookup
+
+Python Example: 
+student["name"] = "Bisola"
+Key = "name"
+Value = "Bisola"
+
+------------------------------------------------------------ 
+TREE
+
+A tree is a hierarchical data structure made of nodes connected by edges.
+
+Important Terms:
+Root The first node of the tree.
+Parent A node connected above another node.
+Child A node connected below a parent.
+Leaf Node A node with no children.
+
+Example:
+    A
+   / \
+  B   C
+ / \
+D   E
+
+
+Applications:
+File systems
+Database indexing
+Decision trees
+Search engines
+
+Advantages:
+Fast searching
+Hierarchical organization
+Efficient insertion and deletion
+
+------------------------------------------------------------
+HEAP
+
+A heap is a special tree-based data structure.
+It follows the heap property.
+Max Heap:
+Parent ≥ Children
+
+Example:
+    100
+   /   \
+  80    60
+ / \
+40  20
+
+
+Min Heap:
+Parent ≤ Children
+
+Applications:
+Priority Queues
+Heap Sort
+Task Scheduling
+Dijkstra Algorithm
+
+Advantages:
+
+Fast retrieval of highest or lowest value
+Efficient priority management
+
+------------------------------------------------------------ 
+GRAPH
+A graph is a collection of vertices (nodes) connected by edges.
+
+Example:
+A ----- B | | | | C ----- D
+
+Terminology:
+Vertex A node in a graph.
+Edge A connection between two vertices.
+
+Applications:
+Social Networks
+Google Maps
+Computer Networks
+Flight Routes
+
+Common Algorithms:
+Breadth First Search (BFS)
+Depth First Search (DFS)
+Dijkstra Algorithm
+
+------------------------------------------------------------ 
+APPLICATIONS OF DATA STRUCTURES
+
+Data structures are used in:
+Databases: Data storage and retrieval
+
+Operating Systems
+Memory management
+Process scheduling
+
+Computer Graphics
+Storing graphical objects
+
+Artificial Intelligence
+Knowledge representation
+Decision making
+
+Web Browsers
+History management
+Navigation systems
+
+Computer Networks
+Routing and path finding
+
+Game Development
+Scene management
+Object storage
+
+------------------------------------------------------------ 
+ADVANTAGES OF DATA STRUCTURES
+
+Efficiency
+Fast data access and processing
+Flexibility
+Data can be modified easily
+Reusability
+Can be used in various programs
+Maintainability
+Easier to understand and update
+Scalability
+Handles large amounts of data
+Optimization
+Improves time and memory performance
+
+------------------------------------------------------------ 
+KEY TERMS TO KNOW
+
+Data Raw facts and information.
+Data Structure A method of organizing and storing data.
+Node A unit that stores data.
+Pointer A reference to another memory location.
+Index The position of an element.
+Traversal Visiting each element in a data structure.
+Search Finding a specific element.
+Insertion Adding a new element.
+Deletion Removing an element.
+Sorting Arranging data in a specific order.
+Algorithm A step-by-step procedure for solving a problem.
+Time Complexity The amount of time an algorithm takes as input size increases.
+Space Complexity The amount of memory an algorithm uses.
+
+
