@@ -38,17 +38,18 @@ Data Structures │
 ├── Non-Primitive 
 │ └── Linear vs Non-Linear
 
+------------------------------------------------------------ 
 PRIMITIVE DATA STRUCTURES
 
 Primitive data structures are basic built-in data types provided by a programming language.
 
 Examples:
-
 Integer (int)
 Float
 Character (char)
 Boolean (bool)
-list
+List
+String
 Set
 Dictionary
 Tuple
@@ -75,7 +76,6 @@ They can store multiple values and relationships between values.
 Examples:
 
 Array
-List
 Linked List
 Stack
 Queue
@@ -113,7 +113,8 @@ ARRAY
 An array is a collection of elements of the same data type stored in contiguous memory locations.
 Each element is accessed using an index.
 
-Example:Array = [10, 20, 30, 40, 50]
+Example:
+Array = [10, 20, 30, 40, 50]
 
 Index:
 0 → 10
@@ -237,7 +238,6 @@ A non-linear data structure stores data in a hierarchical or network-like struct
 Elements are not arranged sequentially.
 
 Characteristics:
-
 Multiple relationships between elements
 Suitable for complex data representation
 Efficient for hierarchical data
@@ -311,6 +311,7 @@ HEAP
 
 A heap is a special tree-based data structure.
 It follows the heap property.
+
 Max Heap:
 Parent ≥ Children
 
@@ -324,6 +325,14 @@ Example:
 
 Min Heap:
 Parent ≤ Children
+
+Example:
+         10
+        /  \
+      20    30
+     / \
+   40  50
+
 
 Applications:
 Priority Queues
@@ -341,7 +350,10 @@ GRAPH
 A graph is a collection of vertices (nodes) connected by edges.
 
 Example:
-A ----- B | | | | C ----- D
+A ----- B
+|       |
+|       |
+C ----- D
 
 Terminology:
 Vertex A node in a graph.
@@ -363,44 +375,22 @@ APPLICATIONS OF DATA STRUCTURES
 
 Data structures are used in:
 Databases: Data storage and retrieval
-
-Operating Systems
-Memory management
-Process scheduling
-
-Computer Graphics
-Storing graphical objects
-
-Artificial Intelligence
-Knowledge representation
-Decision making
-
-Web Browsers
-History management
-Navigation systems
-
-Computer Networks
-Routing and path finding
-
-Game Development
-Scene management
-Object storage
+Operating Systems: Memory management and Process scheduling
+Computer Graphics: Storing graphical objects
+Artificial Intelligence: Knowledge representation and Decision making
+Web Browsers: History management and Navigation systems
+Computer Networks: Routing and path finding
+Game Development: Scene management and Object storage
 
 ------------------------------------------------------------ 
 ADVANTAGES OF DATA STRUCTURES
 
-Efficiency
-Fast data access and processing
-Flexibility
-Data can be modified easily
-Reusability
-Can be used in various programs
-Maintainability
-Easier to understand and update
-Scalability
-Handles large amounts of data
-Optimization
-Improves time and memory performance
+Efficiency: Fast data access and processing
+Flexibility: Data can be modified easily
+Reusability: Can be used in various programs
+Maintainability: Easier to understand and update
+Scalability: Handles large amounts of data
+Optimization: Improves time and memory performance
 
 ------------------------------------------------------------ 
 KEY TERMS TO KNOW
