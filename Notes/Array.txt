@@ -1,0 +1,10 @@
+The sequential organization of an array is a fixed size and uses continuous 
+memory locations and, hence, the access time to any data element is the 
+same, however large may be the array size. However, in-between insertions 
+and deletions are expensive since they requires data shifting by several loca
+tions to keep the data consistent.
+
+The restriction on an array is that all the elements we wish to store in 
+the array must be of the same data type and have a predetermined size.
+An array, as a data structure, may be defined as a set of pairs (index, 
+value) such that with each index, a value is associated
