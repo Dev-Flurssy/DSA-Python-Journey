@@ -1104,3 +1104,290 @@ Ignore Smaller Terms
 5n³ + 2n² + n → O(n³)
 
 ------------------------------------------------------------
+THETA NOTATION (Θ)
+
+Theta Notation represents the exact asymptotic growth of a function.
+It gives both the upper bound and lower bound of an algorithm.
+Theta tells us the tight bound of an algorithm.
+
+------------------------------------------------------------
+DEFINITION OF THETA
+
+A function f(n) is Θ(g(n)) if there exist positive constants:
+c₁
+c₂
+n₀
+
+such that:
+c₁g(n) ≤ f(n) ≤ c₂g(n)
+
+for all:
+n ≥ n₀
+
+------------------------------------------------------------
+MEANING
+
+Lower Bound: c₁g(n)
+Upper Bound: c₂g(n)
+
+Actual Function:
+f(n)
+
+Therefore:
+f(n) grows at the same rate as g(n)
+
+------------------------------------------------------------
+GRAPHICAL IDEA
+
+c₂g(n)
+│
+│      /
+│     /
+│    /
+│   /  f(n)
+│  /
+│ /
+│/
+│\
+│ \
+│  \
+│   \
+│    \
+│     \
+│      \
+c₁g(n)
+└────────────────────► n
+         n₀
+
+After n₀:
+c₁g(n) ≤ f(n) ≤ c₂g(n)
+
+------------------------------------------------------------
+EXAMPLE
+
+Let: f(n) = 3n + 2
+We know: 3n ≤ 3n + 2 ≤ 4n
+for all: n ≥ 2
+Therefore: f(n) = Θ(n)
+
+------------------------------------------------------------
+WHY?
+
+As n becomes large: 3n dominates 2
+The constant 2 becomes insignificant.
+
+Therefore: 3n + 2 behaves exactly like n.
+Hence: Θ(n)
+
+------------------------------------------------------------
+POLYNOMIAL RULE
+
+If: f(n) = aₘnᵐ + ... + a₁n + a₀
+Then: f(n) = Θ(nᵐ)
+
+------------------------------------------------------------
+EXAMPLES
+
+f(n) = 5n³ + 2n² + 10
+Highest Power: n³
+Therefore: Θ(n³)
+
+f(n) = 7n² + 9n + 1
+Highest Power: n²
+Therefore: Θ(n²)
+
+f(n) = 4n + 20
+Highest Power: n
+Therefore: Θ(n)
+
+
+------------------------------------------------------------
+GROWTH RATE OF FUNCTIONS
+
+Fastest Growth:
+Exponential Functions
+Examples:
+2ⁿ
+3ⁿ
+
+Medium Growth:
+Polynomial Functions
+Examples:
+n²
+n³
+n⁴
+
+
+Slowest Growth:
+Logarithmic Functions
+Examples:
+log n
+log₂ n
+
+------------------------------------------------------------
+Growth Order:
+log n
+↓
+n
+↓
+n²
+↓
+n³
+↓
+2ⁿ
+
+------------------------------------------------------------
+SMALL OH NOTATION (o)
+
+Small Oh represents a strict upper bound.
+
+Definition:
+f(n) = o(g(n))
+if:
+lim n→∞ [f(n)/g(n)] = 0
+
+------------------------------------------------------------
+MEANING
+
+f(n) grows much slower than g(n)
+As n becomes very large:
+f(n) becomes insignificant compared to g(n)
+
+------------------------------------------------------------
+EXAMPLE
+
+Let: f(n) = 3n + 2
+g(n) = n²
+
+Compute:
+lim n→∞ [(3n + 2)/n²]
+= 0
+
+Therefore:
+3n + 2 = o(n²)
+
+------------------------------------------------------------
+WHY?
+
+n² grows much faster than n.
+Eventually: (3n + 2)/n²
+becomes extremely small.
+
+Approaches:0
+Therefore: o(n²)
+
+------------------------------------------------------------
+MORE EXAMPLES OF SMALL OH
+
+n = o(n²)
+log n = o(n)
+n² = o(n³)
+n³ = o(2ⁿ)
+
+------------------------------------------------------------
+LITTLE OMEGA (ω)
+
+Little Omega represents a strict lower bound.
+
+Definition:
+f(n) = ω(g(n))
+if:
+lim n→∞ [g(n)/f(n)] = 0
+
+------------------------------------------------------------
+MEANING
+
+f(n) grows much faster than g(n)
+As n becomes very large:
+g(n) becomes insignificant compared to f(n)
+
+------------------------------------------------------------
+EXAMPLE
+
+f(n) = n²
+g(n) = n
+
+Compute:
+lim n→∞ [n/n²]
+= 0
+
+Therefore:
+n² = ω(n)
+
+------------------------------------------------------------
+WHY?
+
+n² grows much faster than n.
+
+Eventually: n/n² = 1/n
+Approaches: 0
+Therefore: n² is a strict lower bound above n.
+
+------------------------------------------------------------
+MORE EXAMPLES OF LITTLE OMEGA
+
+n² = ω(n)
+n³ = ω(n²)
+2ⁿ = ω(n³)
+n = ω(log n)
+
+------------------------------------------------------------
+COMPARISON OF NOTATIONS
+
+BIG OH O(g(n))
+Represents: Upper Bound
+Meaning: f(n) grows no faster than g(n)
+Usually used for: Worst Case
+
+BIG OMEGA Ω(g(n))
+Represents: Lower Bound
+Meaning: f(n) grows at least as fast as g(n)
+Usually used for: Best Case
+
+THETA Θ(g(n))
+Represents: Tight Bound
+Meaning:f(n) grows exactly like g(n)
+
+SMALL OH o(g(n))
+Represents: Strict Upper Bound
+Meaning: f(n) grows strictly slower than g(n)
+
+
+LITTLE OMEGA ω(g(n))
+Represents: Strict Lower Bound
+Meaning: f(n) grows strictly faster than g(n)
+
+
+------------------------------------------------------------
+SHORTCUTS
+
+f(n) = 3n + 2
+O(n)
+Θ(n)
+o(n²)
+
+
+f(n) = 9n² + 5n + 3
+O(n²)
+Θ(n²)
+ω(n)
+
+f(n) = n³ + n² + n
+O(n³)
+Θ(n³)
+ω(n²)
+
+------------------------------------------------------------
+MEMORY SHORTCUT
+
+O     → At Most
+Ω     → At Least
+Θ     → Exactly
+o     → Strictly Smaller
+ω     → Strictly Larger
+
+Worst Case → O
+Best Case → Ω
+Exact Growth → Θ
+
+------------------------------------------------------------
