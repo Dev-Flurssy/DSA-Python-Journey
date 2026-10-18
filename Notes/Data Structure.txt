@@ -1428,16 +1428,13 @@ DYNAMIC ARRAY EXAMPLE
 
 Consider a dynamic array:
 a = []
-
 Adding an element: a.append(10)
-
 Usually requires: 1 step
 
 ------------------------------------------------------------
 WHEN THE ARRAY BECOMES FULL
 
 Suppose the array capacity is: [_, _, _, _]
-
 And it is already full: [1, 2, 3, 4]
 Now insert: a.append(5)
 
