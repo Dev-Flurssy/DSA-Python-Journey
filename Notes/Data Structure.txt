@@ -62,10 +62,7 @@ Employee → Department
 -----------------------------------
 2. Simplicity: The model should be simple enough for fast processing and easy implementation.
 
-Goal:
-Represent data accurately
-AND
-Process data efficiently
+Goal: Represent data accurately & Process data efficiently
 
 ------------------------------------------------------------
 CLASSIFICATION OF DATA STRUCTURES
@@ -97,11 +94,7 @@ NON-PRIMITIVE DATA STRUCTURES
 
 Non-Primitive Data Structures are organized collections of data items.
 
-The data may be: 
-Homogeneous (same type) 
-OR
-Heterogeneous (different types)
-
+The data may be: Homogeneous (same type) or Heterogeneous (different types)
 Examples:
 Array
 Linked List
@@ -120,17 +113,13 @@ Used to model real-world relationships
 ------------------------------------------------------------
 ABSTRACT DATA TYPE (ADT)
 
-An Abstract Data Type (ADT) defines:
-The set of values and the operations performed on those values
+An Abstract Data Type (ADT) defines: The set of values and the operations performed on those values
 
-An ADT focuses on:
-What the data does
-Not how it is implemented
+An ADT focuses on: What the data does Not how it is implemented
 
 -----------------------------------
 ADT EXAMPLE
 Collection of Numbers
-
 Possible Operations:
 Read
 Insert
@@ -166,26 +155,19 @@ Compare different algorithms that solve the same problem.
 ------------------------------------------------------------
 DEBUGGING
 
-Debugging is the process of: 
-Running a program on test data
-Checking whether the results are correct
-Finding and fixing errors
-Repeating the process until correct results are obtained
+Debugging is the process of: Running a program on test data, Checking whether the results are correct
+Finding and fixing errors, Repeating the process until correct results are obtained
 
 ------------------------------------------------------------
 PROFILING / PERFORMANCE MEASUREMENT
 
-Profiling is the process of: 
-Running a program
-Measuring memory usage
-Measuring execution time
-Evaluating overall performance
+Profiling is the process of: Running a program, Measuring memory usage
+Measuring execution time, Evaluating overall performance
 
 ------------------------------------------------------------
 SPACE COMPLEXITY
 
 Space Complexity measures the amount of storage space required by a program.
-
 Focus: Memory Usage
 Question: How much memory does the program need?
 
@@ -193,7 +175,6 @@ Question: How much memory does the program need?
 TIME COMPLEXITY
 
 Time Complexity measures the time required to execute a program.
-
 Focus: Execution Time
 Question: How long does the program take to run?
 
@@ -241,20 +222,6 @@ Data Structure = Organization of Data + Operations on Data
 Data Model Requirements:
 1. Rich Structure
 2. Simplicity
-
-------------------------------------------------------------
-MEMORY SHORTCUT
-
-Data Structure = Data + Operations
-ADT = Values + Operations
-Algorithm = Steps to Solve a Problem
-Debugging = Fix Errors
-Profiling = Measure Performance
-Space Complexity = Memory
-Time Complexity = Time
-S(p) = C + Sp
-C → Fixed Part
-Sp → Variable Part
 
 ------------------------------------------------------------
 SPACE COMPLEXITY
@@ -375,11 +342,11 @@ The algorithm requires at least n + 3 words of memory.
 ------------------------------------------------------------
 RECURSIVE ALGORITHM
 
-Algorithm RSum(a,n)
+Algorithm RSum(a, n)
 if n <= 0
     return 0
 else
-    return RSum(a,n-1) + a[n]
+    return RSum(a, n-1) + a[n]
 
 ------------------------------------------------------------
 WHY RECURSION USES MORE MEMORY
@@ -399,13 +366,13 @@ CALL STACK
 Suppose:
 a = [7, 2, 15, 9]
 
-RSum(a,3)
+RSum(a, 3)
 
 Recursive Calls:
-RSum(a,3)
-RSum(a,2)
-RSum(a,1)
-RSum(a,0)
+RSum(a, 3)
+RSum(a, 2)
+RSum(a, 1)
+RSum(a, 0)
 
 Each call is stored in memory until the base case is reached.
 
@@ -415,12 +382,12 @@ RSum(a,2)
 RSum(a,1)
 RSum(a,0)
 
-Nothing is removed until RSum(a,0) returns.
+Nothing is removed until RSum(a, 0) returns.
 
 ------------------------------------------------------------
 RECURSION DEPTH
 
-For:RSum(a,3)
+For:RSum(a, 3)
 
 The recursive calls are:
 3
@@ -508,10 +475,10 @@ Recursion:
 Creates a new set of variables for every function call.
 
 Example:
-RSum(a,3)
-RSum(a,2)
-RSum(a,1)
-RSum(a,0)
+RSum(a, 3)
+RSum(a, 2)
+RSum(a, 1)
+RSum(a, 0)
 
 Each call occupies additional memory.
 Therefore recursion generally consumes more memory than iteration.
@@ -520,7 +487,6 @@ Therefore recursion generally consumes more memory than iteration.
 FIXED PART
 
 Does not depend on input size.
-
 Examples:
 n
 i
@@ -705,7 +671,7 @@ Algorithm:
 
 for i = 1 to m
     for j = 1 to n
-        c[i,j] = a[i,j] + b[i,j]
+        c[i, j] = a[i, j] + b[i, j]
 
 Python:
 
@@ -800,16 +766,6 @@ O(log n)
 Matrix Addition:
 Total Steps = 2mn + 2m + 1
 Complexity = O(mn)
-
-------------------------------------------------------------
-MEMORY SHORTCUT
-
-Sequential Search → Check One-by-One → O(n)
-Binary Search → Divide by Two → O(log n)
-Matrix Addition → Nested Loops → O(mn)
-Best Case → Luckiest Case
-Worst Case → Unluckiest Case
-Average Case → Expected Case
 
 ------------------------------------------------------------
 BIG OH NOTATION (O)
