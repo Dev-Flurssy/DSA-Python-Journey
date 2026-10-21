@@ -362,6 +362,143 @@ Then second column.
 Then third column.
 
 ------------------------------------------------------------
+SPARSE MATRIX
+
+A Sparse Matrix is a matrix that contains mostly zero values and very few non-zero values.
+
+Example:
+
+2 0 0 0 0 0 8 9
+0 0 0 3 5 0 0 0
+0 0 0 0 1 9 7 0
+0 0 1 3 4 0 0 0
+0 0 0 0 0 0 0 6
+
+Meaning:
+Only a few elements are useful.
+Most elements are zero.
+Normal matrix storage wastes memory.
+
+------------------------------------------------------------
+SPARSITY OF A MATRIX
+
+Formula:
+Sparsity = Number of Zero Elements ÷ Total Number of Elements
+
+Example:
+Total Elements = 44
+Zero Elements = 31
+Non-Zero Elements = 13
+
+Sparsity = 31 ÷ 44
+
+Meaning:
+Higher sparsity means more zeros.
+Higher sparsity causes memory wastage in normal storage.
+
+------------------------------------------------------------
+SPARSE MATRIX REPRESENTATION
+
+Instead of storing all elements, store only non-zero elements.
+
+Rule:(Row Number, Column Number, Value)
+
+Example:
+(0,0,2)
+(0,6,8)
+(0,7,9)
+(1,3,3)
+(1,4,5)
+(2,4,1)
+(2,5,9)
+(2,6,7)
+(3,2,1)
+(3,3,3)
+(3,4,4)
+(4,7,6)
+
+Meaning:
+First value = Row Number
+Second value = Column Number
+Third value = Actual Non-Zero Element
+
+Advantages:
+Saves memory
+Stores only useful values
+Efficient for large matrices
+
+------------------------------------------------------------
+TRANSPOSE OF A SPARSE MATRIX
+
+Transpose means converting rows into columns and columns into rows.
+
+Rule: (row, column, value) → (column, row, value)
+
+Example:
+(1,3,5) → (3,1,5)
+
+Meaning:
+Rows become columns.
+Columns become rows.
+Value remains unchanged.
+
+------------------------------------------------------------
+ADDITION OF SPARSE MATRICES
+
+Two sparse matrices can be added if their dimensions are equal.
+
+Rule: A(i,j) + B(i,j)
+
+Example:
+A = (1,2,5)
+B = (1,2,3)
+
+Result = (1,2,8)
+
+Meaning:
+Add elements having the same row and column positions.
+Zero elements need not be stored.
+
+Advantages:
+Less computation
+Memory efficient
+
+------------------------------------------------------------
+MULTIPLICATION OF SPARSE MATRICES
+
+Matrix multiplication follows the normal matrix multiplication rule.
+
+Condition:
+Columns of Matrix A = Rows of Matrix B
+
+Example:
+A = (1,2,4)
+B = (2,3,5)
+
+Result contributes to:
+C(1,3) = 4 × 5 = 20
+
+Meaning:
+Only non-zero elements are multiplied.
+Unnecessary multiplication by zero is avoided.
+
+Advantages:
+Faster computation
+Less memory usage
+Efficient for scientific and engineering applications.
+
+------------------------------------------------------------
+ADVANTAGES OF SPARSE MATRICES
+
+Saves memory
+Stores only non-zero values
+Reduces computation time
+Efficient for large engineering matrices
+Useful in finite element analysis
+Useful in scientific computations
+Useful in network and graph problems
+
+------------------------------------------------------------
 THREE-DIMENSIONAL ARRAY
 
 A Three-Dimensional Array is a collection of matrices.
@@ -513,4 +650,3 @@ Coefficients:
 Output Dictionary: {0:3, 1:-2, 2:-1, 3:0}
 
 ------------------------------------------------------------
-
