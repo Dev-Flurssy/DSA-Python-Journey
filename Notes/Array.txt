@@ -8,9 +8,9 @@ Formula:
 Array = Contiguous Memory + Fixed Size + Indexed Access
 
 Meaning:
-• Data is stored in continuous memory locations.
-• Elements are accessed using an index.
-• All elements are usually of the same data type.
+Data is stored in continuous memory locations.
+Elements are accessed using an index.
+All elements are usually of the same data type.
 
 ------------------------------------------------------------
 CHARACTERISTICS OF AN ARRAY
