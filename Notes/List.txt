@@ -1,0 +1,311 @@
+LINKED LIST
+
+A Linked List is a linear collection of data objects called nodes, each pointing to the next node.
+
+Meaning: Data is stored in nodes.
+Each node is connected to another node by a link.
+Elements do not need to be stored in contiguous memory locations.
+
+Each node contains:
+Data Element
+Address of Next Node
+Representation: (Data, Next)
+
+Meaning:
+Data stores the actual value.
+Next stores the address of the next node.
+The address is also called a pointer.
+
+------------------------------------------------------------
+ADVANTAGES OF LINKED LIST
+
+Dynamic size
+Easy insertion of nodes
+Easy deletion of nodes
+Memory allocated when needed
+Can be used to implement stacks and queues
+
+Meaning:
+The size can increase or decrease during execution.
+Insertion and deletion require fewer operations.
+Memory wastage is reduced.
+Large contiguous memory is not required.
+
+------------------------------------------------------------
+MEMORY ALLOCATION IN LINKED LIST
+
+Linked list nodes do not need contiguous memory locations.
+
+Meaning: 
+Nodes can exist anywhere in memory.
+The list size is not restricted by contiguous memory availability.
+Memory usage becomes flexible.
+
+------------------------------------------------------------
+OPERATIONS ON LINKED LIST
+
+Insertion
+Deletion
+Traversal
+Searching
+
+Meaning:
+Insertion adds a node.
+Deletion removes a node.
+Traversal visits nodes one by one.
+Searching finds a particular data item.
+
+------------------------------------------------------------
+DISADVANTAGES OF LINKED LIST
+
+Extra memory required for pointers
+Random access not possible
+Sequential traversal required
+Searching can be slow
+
+Meaning:
+Each node stores an address along with data.
+Elements cannot be accessed directly using indexes.
+Many nodes may need to be visited before reaching the desired node.
+
+------------------------------------------------------------
+SINGLY LINKED LIST
+
+A Singly Linked List contains nodes with two fields:
+Data Field
+Next Field
+The Next Field contains the address of the next node.
+
+Meaning:
+Each node points only to the next node.
+Traversal is possible in one direction only.
+The last node points to NULL.
+
+Structure: (Data, Next)
+
+Example: 10 → 20 → 30 → 40 → NULL
+
+Meaning:
+10 is the first node.
+20 follows 10.
+30 follows 20.
+40 follows 30.
+
+NULL indicates the end of the list.
+
+------------------------------------------------------------
+NODE STRUCTURE
+
+data | next
+
+Meaning:
+Data stores the value.
+Next stores the address of the next node.
+
+------------------------------------------------------------
+NODE CLASS IN PYTHON
+
+Python Program:
+
+class Node:
+    def __init__(self, key):
+        self.data = key
+        self.next = None
+
+Meaning:
+A class named Node is created.
+Every object of this class represents a node.
+data stores the value provided by key.
+next stores the address of the next node.
+Initially next is assigned None.
+
+------------------------------------------------------------
+ATTRIBUTES OF NODE
+
+Data Attribute
+self.data = key
+
+Meaning:
+Stores the actual data value.
+The value is supplied using key.
+
+Next Attribute
+self.next = None
+
+Meaning:
+Stores the address of the next node.
+Initially no node is connected.
+None represents NULL.
+
+------------------------------------------------------------
+OBJECT CREATION
+
+node = Node(10)
+
+Meaning:
+A new node is created.
+Data field contains 10.
+Next field contains None.
+
+Representation: (10, None)
+
+Meaning:
+Data = 10
+Next = NULL
+No next node is linked.
+
+------------------------------------------------------------
+CREATION OF SINGLY LINKED LIST
+
+The first node is created and new nodes are linked one after another.
+
+Process:
+Create first node
+Create next node
+Link current node to next node
+Repeat the process
+
+Meaning:
+The linked list grows dynamically.
+There is no fixed limit on the number of nodes.
+Each node stores the address of the next node.
+
+Example: 10 → 20 → 30 → 40 → NULL
+
+Meaning:
+10 is the start node.
+20 is linked after 10.
+30 is linked after 20.
+40 is linked after 30.
+NULL marks the end of the list.
+
+------------------------------------------------------------
+ADVANTAGES OF SINGLY LINKED LIST
+
+Dynamic memory allocation
+Efficient insertion
+Efficient deletion
+Flexible storage
+No fixed size limitation
+
+Meaning:
+Memory is allocated when required.
+Nodes can be added easily.
+Nodes can be removed easily.
+The list can expand whenever needed.
+
+------------------------------------------------------------
+TRAVERSAL OF A SINGLY LINKED LIST
+
+Traversal means visiting each node of the linked list one by one.
+
+Example: 10 -> 20 -> 30 -> NULL
+
+Meaning:
+Start from the first node.
+Visit each node.
+Move to the next node.
+Stop when NULL is reached.
+
+Code:
+temp = self.head
+
+while temp:
+    print(temp.data)
+    temp = temp.next
+
+Meaning:
+temp starts at the first node.
+Print the current node.
+Move temp to the next node.
+Continue until temp becomes NULL.
+
+------------------------------------------------------------
+INSERTION IN A SINGLY LINKED LIST
+
+Insertion means adding a new node into the linked list.
+
+Positions of Insertion:
+Insertion at Beginning
+Insertion at End
+Insertion After a Given Node
+Insertion Before a Given Node
+
+------------------------------------------------------------
+INSERTION AT BEGINNING
+
+A new node is inserted before the first node.
+
+Example:
+Before: 10 -> 20 -> 30 -> NULL
+After inserting 5: 5 -> 10 -> 20 -> 30 -> NULL
+
+Meaning:
+Create a new node.
+Make the new node point to the current first node.
+Move head to the new node.
+
+Code:
+newNode.next = self.head
+self.head = newNode
+
+Advantage:
+Insertion takes constant time O(1).
+
+------------------------------------------------------------
+INSERTION AT END
+
+A new node is inserted after the last node.
+
+Example:
+Before: 10 -> 20 -> 30 -> NULL
+After inserting 40: 10 -> 20 -> 30 -> 40 -> NULL
+
+Meaning:
+Move to the last node.
+Connect the last node to the new node.
+New node becomes the last node.
+
+Code:
+temp = self.head
+
+while temp.next:
+    temp = temp.next
+
+temp.next = newNode
+
+------------------------------------------------------------
+INSERTION AFTER A GIVEN NODE
+
+A new node is inserted after a node containing a given key.
+
+Example:
+Before: 10 -> 20 -> 40 -> NULL
+Insert 30 after 20
+After: 10 -> 20 -> 30 -> 40 -> NULL
+
+Meaning:
+Find the node containing the key.
+Make the new node point to the next node.
+Make the current node point to the new node.
+
+Code:
+newNode.next = temp.next
+temp.next = newNode
+
+------------------------------------------------------------
+INSERTION BEFORE A GIVEN NODE
+
+A new node is inserted before a node containing a given key.
+
+Example:
+Before: 10 -> 30 -> 40 -> NULL
+Insert 20 before 30 
+After: 10 -> 20 -> 30 -> 40 -> NULL
+
+Meaning:
+Find the node before the given key.
+Make the new node point to the key node.
+Make the previous node point to the new node.
+
+------------------------------------------------------------
