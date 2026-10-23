@@ -1,8 +1,6 @@
 ARRAY DATA STRUCTURE
-------------------------------------------------------------
 
-An Array is a linear data structure that stores a collection of elements in
-contiguous (continuous) memory locations.
+An Array is a linear data structure that stores a collection of elements in contiguous (continuous) memory locations.
 
 Formula:
 Array = Contiguous Memory + Fixed Size + Indexed Access
@@ -435,7 +433,7 @@ Transpose means converting rows into columns and columns into rows.
 Rule: (row, column, value) → (column, row, value)
 
 Example:
-(1,3,5) → (3,1,5)
+(1, 3, 5) → (3, 1, 5)
 
 Meaning:
 Rows become columns.
@@ -450,10 +448,10 @@ Two sparse matrices can be added if their dimensions are equal.
 Rule: A(i,j) + B(i,j)
 
 Example:
-A = (1,2,5)
-B = (1,2,3)
+A = (1, 2, 5)
+B = (1, 2, 3)
 
-Result = (1,2,8)
+Result = (1, 2, 8)
 
 Meaning:
 Add elements having the same row and column positions.
@@ -472,11 +470,11 @@ Condition:
 Columns of Matrix A = Rows of Matrix B
 
 Example:
-A = (1,2,4)
-B = (2,3,5)
+A = (1, 2, 4)
+B = (2, 3, 5)
 
 Result contributes to:
-C(1,3) = 4 × 5 = 20
+C(1, 3) = 4 × 5 = 20
 
 Meaning:
 Only non-zero elements are multiplied.
