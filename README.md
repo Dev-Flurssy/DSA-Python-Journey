@@ -1,4 +1,4 @@
-# Data Science Algorithm Foundation
+# Data Science & Algorithm Foundation
 
 ## Welcome!
 
