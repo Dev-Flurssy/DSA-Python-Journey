@@ -1,0 +1,650 @@
+ARRAY DATA STRUCTURE
+
+An Array is a linear data structure that stores a collection of elements in contiguous (continuous) memory locations.
+
+Formula:
+Array = Contiguous Memory + Fixed Size + Indexed Access
+
+Meaning:
+Data is stored in continuous memory locations.
+Elements are accessed using an index.
+All elements are usually of the same data type.
+
+------------------------------------------------------------
+CHARACTERISTICS OF AN ARRAY
+
+1. Fixed Size
+The size of an array is defined before use and cannot be changed easily.
+
+Example:
+arr = [10, 20, 30, 40, 50]
+Size = 5
+
+2. Contiguous Memory Allocation
+Array elements are stored in adjacent memory locations.
+
+Index :  0    1    2    3    4
+Value : 10   20   30   40   50
+Because memory locations are continuous, the computer can directly find any element.
+
+3. Direct Access
+Elements can be accessed directly using their index.
+
+Example: arr[2]
+Output: 30
+
+------------------------------------------------------------
+ADVANTAGES OF ARRAYS
+
+1. Fast Access
+Since elements are stored in contiguous memory locations, the access time remains almost constant regardless of the array size.
+
+Complexity: Access = O(1)
+This is called Constant Time Access.
+
+Example:
+arr[0]
+arr[500]
+arr[1000]
+
+All can be accessed directly without searching.
+
+2. Simple Organization
+Arrays are easy to understand and implement.
+
+Benefits:
+• Efficient storage
+• Sequential organization
+• Fast retrieval of data
+
+------------------------------------------------------------
+LIMITATIONS OF ARRAYS
+
+1. Costly Insertions
+Inserting an element in the middle requires shifting existing elements.
+
+Before Insertion: [10, 20, 30, 40]
+Insert 25 at index 2: [10, 20, 25, 30, 40]
+Elements 30 and 40 must move one position to the right.
+
+Complexity: Insertion = O(n)
+
+2. Costly Deletions
+Deleting an element in the middle also requires shifting elements.
+
+Before Deletion: [10, 20, 30, 40, 50]
+Delete 30: [10, 20, 40, 50]
+Elements 40 and 50 move one position to the left.
+
+Complexity: Deletion = O(n)
+
+3. Homogeneous Elements
+An array stores elements of the same data type.
+
+Examples:
+Valid: [10, 20, 30, 40]
+Valid: ['A', 'B', 'C']
+Not Valid in a Traditional Array: [10, 'A', 3.14]
+
+4. Predetermined Size
+The size of an array must be known before it is created.
+If more space is needed, a new array must be created.
+
+------------------------------------------------------------
+ARRAY AS A MATHEMATICAL MODEL
+
+An array can be represented as a set of pairs: (Index, Value)
+
+Example:
+(0, 10)
+(1, 20)
+(2, 30)
+(3, 40)
+
+Where:
+Index  → Indicates the position/location.
+Value  → Indicates the data stored at that position.
+
+------------------------------------------------------------
+FORMAL DEFINITION OF AN ARRAY
+
+An Array is a finite, ordered collection of homogeneous elements stored in contiguous memory locations 
+where each element can be accessed directly using an index in constant time O(1).
+
+------------------------------------------------------------
+ARRAY AS AN ABSTRACT DATA TYPE (ADT)
+
+ADT Array
+Instance:
+Create Array(Size)
+
+Pre-condition:
+At least one element must exist to perform operations.
+
+Operations:
+1. Insert: Add an element to the array.
+2. Delete: Remove an element from the array.
+3. Access: Retrieve an element using its index.
+4. Update: Modify an existing element.
+5. Search: Find the location of an element.
+6. Traverse: Visit every element in the array.
+
+------------------------------------------------------------
+IMPLEMENTATION OF ARRAY USING PYTHON LIST
+
+Python commonly uses lists to implement array-like structures.
+
+Example: arr = [10, 20, 30, 40, 50]
+
+Access:
+arr[0]      # 10
+arr[3]      # 40
+
+Insert: 
+arr.insert(2, 25)
+
+Delete: 
+arr.remove(30)
+
+Traverse:
+for value in arr:
+    print(value)
+
+------------------------------------------------------------
+IMPLEMENTATION OF ARRAY USING DICTIONARY
+
+A dictionary can be used to simulate an array by using indices as keys.
+
+Example:
+arr = {
+    0: 10,
+    1: 20,
+    2: 30,
+    3: 40
+}
+
+Access: print(arr[2])
+Output: 30
+
+Advantages:
+• Easy access using keys
+• Dynamic size
+
+Disadvantages:
+• Not stored in contiguous memory
+• Slower than a true array
+
+------------------------------------------------------------
+IMPLEMENTATION OF ARRAY USING ARRAY MODULE
+
+Python provides an array module for creating arrays that store
+elements of the same data type.
+
+Import:
+from array import *
+
+Create Array:
+arr = array('i', [10, 20, 30, 40, 50])
+
+Access: print(arr[2])
+Output: 30
+Insert: arr.insert(2, 25)
+Delete: arr.remove(30)
+
+Advantages:
+• Memory efficient
+• Stores homogeneous data
+• Similar to traditional arrays
+
+Disadvantages:
+• Only one data type allowed
+
+------------------------------------------------------------
+IMPLEMENTATION OF ARRAY USING NUMPY
+
+NumPy provides a powerful array object for numerical computing.
+
+Import:
+import numpy as np
+
+Create Array:
+arr = np.array([10, 20, 30, 40, 50])
+
+Access: print(arr[2])
+Output: 30
+Arithmetic Operations: print(arr + 10)
+Output: [20 30 40 50 60]
+
+Advantages:
+• Fast computations
+• Supports multidimensional arrays
+• Efficient memory usage
+
+Disadvantages:
+• Requires NumPy installation
+
+------------------------------------------------------------
+IMPLEMENTATION OF ARRAY USING CLASS
+
+Arrays can also be implemented using a class.
+
+Example:
+class Array:
+
+    def __init__(self):
+        self.data = []
+
+    def insert(self, value):
+        self.data.append(value)
+
+    def access(self, index):
+        if 0 <= index < len(self.data):
+            return self.data[index]
+        return "Invalid Index"
+
+obj = Array()
+
+obj.insert(10)
+obj.insert(20)
+obj.insert(30)
+
+print(obj.access(1))
+Output: 20
+
+Advantages:
+Supports custom operations
+Encapsulation of data
+
+Disadvantages:
+More complex implementation
+Additional memory overhead
+
+------------------------------------------------------------
+COMPARISON OF ARRAY IMPLEMENTATIONS
+
+Dictionary:
+Uses key-value pairs
+Dynamic size
+Not a true array
+
+Array Module:
+Homogeneous elements
+Memory efficient
+Close to traditional arrays
+
+NumPy Array:
+High performance
+Mathematical operations
+Supports multidimensional arrays
+
+Class-Based Array:
+User-defined implementation
+Flexible
+Used for learning data structures
+
+------------------------------------------------------------
+MULTI-DIMENSIONAL ARRAYS
+
+A Multi-Dimensional Array is an array that contains more than one dimension.
+
+Formula: Multi-Dimensional Array = Rows + Columns + Indexed Access
+
+Meaning:
+Used to store data in table or grid form.
+Can have two, three, or more dimensions.
+Useful when data depends on multiple variables.
+
+------------------------------------------------------------
+TWO-DIMENSIONAL ARRAY (MATRIX)
+
+A Two-Dimensional Array stores data in rows and columns.
+
+Example: f(x, y) = x² + 5xy + 3y²
+
+Since the function depends on both x and y, a one-dimensional array is not sufficient.
+
+Meaning:
+Rows represent values of y.
+Columns represent values of x.
+Each cell stores a value of the function.
+
+Example Declaration: z[3][6]
+
+Meaning:
+3 Rows
+6 Columns
+Total Elements = 18
+
+Accessing Elements:
+z[0][0]
+z[0][1]
+z[2][5]
+
+Here:
+First index = Row number
+Second index = Column number
+
+------------------------------------------------------------
+MATRIX STORAGE METHODS
+
+1. Row-Major Order
+Rows are stored one after another in memory.
+
+Example Matrix:
+1 2 3
+4 5 6
+7 8 9
+
+Stored As:
+1 2 3 4 5 6 7 8 9
+
+Meaning:
+Entire first row is stored first.
+Then second row.
+Then third row.
+
+2. Column-Major Order
+Columns are stored one after another in memory.
+
+Example Matrix:
+1 2 3
+4 5 6
+7 8 9
+
+Stored As:
+1 4 7 2 5 8 3 6 9
+
+Meaning:
+Entire first column is stored first.
+Then second column.
+Then third column.
+
+------------------------------------------------------------
+SPARSE MATRIX
+
+A Sparse Matrix is a matrix that contains mostly zero values and very few non-zero values.
+
+Example:
+
+2 0 0 0 0 0 8 9
+0 0 0 3 5 0 0 0
+0 0 0 0 1 9 7 0
+0 0 1 3 4 0 0 0
+0 0 0 0 0 0 0 6
+
+Meaning:
+Only a few elements are useful.
+Most elements are zero.
+Normal matrix storage wastes memory.
+
+------------------------------------------------------------
+SPARSITY OF A MATRIX
+
+Formula:
+Sparsity = Number of Zero Elements ÷ Total Number of Elements
+
+Example:
+Total Elements = 44
+Zero Elements = 31
+Non-Zero Elements = 13
+
+Sparsity = 31 ÷ 44
+
+Meaning:
+Higher sparsity means more zeros.
+Higher sparsity causes memory wastage in normal storage.
+
+------------------------------------------------------------
+SPARSE MATRIX REPRESENTATION
+
+Instead of storing all elements, store only non-zero elements.
+
+Rule:(Row Number, Column Number, Value)
+
+Example:
+(0,0,2)
+(0,6,8)
+(0,7,9)
+(1,3,3)
+(1,4,5)
+(2,4,1)
+(2,5,9)
+(2,6,7)
+(3,2,1)
+(3,3,3)
+(3,4,4)
+(4,7,6)
+
+Meaning:
+First value = Row Number
+Second value = Column Number
+Third value = Actual Non-Zero Element
+
+Advantages:
+Saves memory
+Stores only useful values
+Efficient for large matrices
+
+------------------------------------------------------------
+TRANSPOSE OF A SPARSE MATRIX
+
+Transpose means converting rows into columns and columns into rows.
+
+Rule: (row, column, value) → (column, row, value)
+
+Example:
+(1, 3, 5) → (3, 1, 5)
+
+Meaning:
+Rows become columns.
+Columns become rows.
+Value remains unchanged.
+
+------------------------------------------------------------
+ADDITION OF SPARSE MATRICES
+
+Two sparse matrices can be added if their dimensions are equal.
+
+Rule: A(i,j) + B(i,j)
+
+Example:
+A = (1, 2, 5)
+B = (1, 2, 3)
+
+Result = (1, 2, 8)
+
+Meaning:
+Add elements having the same row and column positions.
+Zero elements need not be stored.
+
+Advantages:
+Less computation
+Memory efficient
+
+------------------------------------------------------------
+MULTIPLICATION OF SPARSE MATRICES
+
+Matrix multiplication follows the normal matrix multiplication rule.
+
+Condition:
+Columns of Matrix A = Rows of Matrix B
+
+Example:
+A = (1, 2, 4)
+B = (2, 3, 5)
+
+Result contributes to:
+C(1, 3) = 4 × 5 = 20
+
+Meaning:
+Only non-zero elements are multiplied.
+Unnecessary multiplication by zero is avoided.
+
+Advantages:
+Faster computation
+Less memory usage
+Efficient for scientific and engineering applications.
+
+------------------------------------------------------------
+ADVANTAGES OF SPARSE MATRICES
+
+Saves memory
+Stores only non-zero values
+Reduces computation time
+Efficient for large engineering matrices
+Useful in finite element analysis
+Useful in scientific computations
+Useful in network and graph problems
+
+------------------------------------------------------------
+THREE-DIMENSIONAL ARRAY
+
+A Three-Dimensional Array is a collection of matrices.
+
+Example: A[m][n][p]
+
+Meaning:
+m = Number of matrices
+n = Number of rows
+p = Number of columns
+
+Applications:
+Scientific Computing
+Image Processing
+Computer Graphics
+Machine Learning
+
+------------------------------------------------------------
+ARRAY APPLICATION: POLYNOMIAL REPRESENTATION
+
+Arrays can be used to store polynomial expressions.
+
+General Polynomial: P(x) = a₀ + a₁x + a₂x² + ... + aₙxⁿ
+Array Representation:[a₀, a₁, a₂, ..., aₙ]
+
+Meaning:
+Index = Exponent
+Value = Coefficient
+
+Example: P(x) = 3 − 2x − x² + x⁴
+Array:
+Index : 0   1   2   3   4
+Value : 3  -2  -1   0   1
+
+Meaning:
+3 represents x⁰
+-2 represents x¹
+-1 represents x²
+0 represents x³
+1 represents x⁴
+
+------------------------------------------------------------
+SPARSE POLYNOMIAL
+
+A Sparse Polynomial contains very few non-zero coefficients.
+
+Example: P(x) = 5 + x⁹⁸
+Array Representation: [5, 0, 0, 0, ..., 0, 1]
+
+Meaning:
+Only two useful values exist.
+Most locations contain zero.
+Large amount of memory is wasted.
+
+------------------------------------------------------------
+SPARSITY OF A POLYNOMIAL
+
+Formula: 
+Sparsity = Number of Zero Terms ÷ Total Number of Terms
+
+Example 1:
+P(x) = 3 − 2x − x² + x⁴
+Zero Terms = 1
+Total Terms = 5
+Sparsity = 1 ÷ 5
+
+Example 2:
+P(x) = 5 + x⁹⁸
+Zero Terms = 97
+Total Terms = 99
+Sparsity = 97 ÷ 99
+
+Meaning:
+Higher sparsity means more zero values.
+Higher sparsity leads to memory wastage.
+
+------------------------------------------------------------
+POLYNOMIAL USING DICTIONARY
+
+Instead of storing many zeros, Python uses dictionaries for efficient storage.
+
+Rule:
+Key = Exponent
+Value = Coefficient
+
+Example: P(x) = 3 − 2x − x² + x⁴
+Dictionary: {0:3, 1:-2, 2:-1, 3:0, 4:1}
+
+Meaning:
+Exponent 0 has coefficient 3
+Exponent 1 has coefficient -2
+Exponent 2 has coefficient -1
+Exponent 4 has coefficient 1
+
+Advantages:
+Saves memory
+Efficient for sparse polynomials
+Faster polynomial operations
+
+------------------------------------------------------------
+ABSTRACT DATA TYPE (ADT) OF POLYNOMIAL
+
+Instance:
+Create a Polynomial
+
+Operations:
+Addition
+Subtraction
+Multiplication
+Evaluation
+
+Example: 
+P(x) = 3 + 2x
+Q(x) = 1 + x
+
+Addition:
+P(x) + Q(x)
+= (3 + 2x) + (1 + x)
+= 4 + 3x
+
+------------------------------------------------------------
+PYTHON FUNCTION TO READ A POLYNOMIAL
+
+def readPoly():
+    p = {}
+    n = int(input("Enter Degree of Polynomial: "))
+
+    for i in range(n):
+        print("Enter coefficient for x^", i, end=": ")
+        p[i] = int(input())
+
+    return p
+
+Explanation:
+Creates an empty dictionary.
+Reads the degree of the polynomial.
+Reads coefficients one by one.
+Stores exponent as key.
+Stores coefficient as value.
+
+Example Input: Degree = 4
+
+Coefficients:
+3
+-2
+-1
+0
+
+Output Dictionary: {0:3, 1:-2, 2:-1, 3:0}
+
+------------------------------------------------------------

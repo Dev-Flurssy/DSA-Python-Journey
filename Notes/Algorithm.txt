@@ -1,0 +1,297 @@
+ALGORITHM
+ 
+An algorithm is a finite set of well-defined steps used to solve a problem or perform a computation.
+It is a step-by-step procedure that takes an input, processes it, and produces an output.
+
+A good algorithm should:
+Be clear and unambiguous
+Have a finite number of steps
+Produce a correct result
+Be efficient in terms of time and memory
+
+Example: Finding the largest number in a list of values.
+
+------------------------------------------------------------ 
+WHY ALGORITHMS ARE IMPORTANT 
+
+
+Algorithms help us:
+
+Solve problems systematically
+Automate repetitive tasks
+Improve program efficiency
+Process large amounts of data
+Build reliable software systems
+
+------------------------------------------------------------ 
+TYPES OF ALGORITHMS 
+
+
+Algorithms can be classified based on the strategy used to solve problems.
+
+Common categories include:
+
+Searching Algorithms
+Sorting Algorithms
+Recursive Algorithms
+String Algorithms
+Divide and Conquer Algorithms
+Greedy Algorithms
+Dynamic Programming Algorithms
+Backtracking Algorithms
+Graph Algorithms
+Tree Algorithms
+Mathematical Algorithms
+Bit Manipulation Algorithms
+
+------------------------------------------------------------ 
+SEARCHING ALGORITHMS 
+
+Searching algorithms are used to find a particular element in a data structure.
+
+Common questions:
+Does the element exist?
+Where is the element located?
+How quickly can it be found?
+
+Common examples:
+Linear Search
+Binary Search
+
+Use cases:
+Finding a student record
+Searching a file
+Database lookup
+
+------------------------------------------------------------ 
+SORTING ALGORITHMS 
+
+Sorting algorithms arrange data in a specific order.
+
+The order can be:
+Ascending
+Descending
+
+Common examples:
+Bubble Sort
+Selection Sort
+Insertion Sort
+Merge Sort
+Quick Sort
+
+Benefits:
+Faster searching
+Easier data analysis
+Improved processing efficiency
+
+------------------------------------------------------------ 
+RECURSIVE ALGORITHMS 
+
+
+A recursive algorithm solves a problem by calling itself repeatedly until a base condition is reached.
+
+Important concepts:
+Base Case: The condition that stops recursion.
+Recursive Case: The step where the function calls itself.
+
+Example: Factorial computation
+5! = 5 × 4 × 3 × 2 × 1
+
+----------------------------------------------------------- 
+STRING ALGORITHMS 
+
+String algorithms process and manipulate text data.
+
+Common operations:
+Searching text
+Comparing strings
+Pattern matching
+Reversing strings
+
+Applications:
+Search engines
+Text editors
+DNA sequence analysis
+
+------------------------------------------------------------ 
+DIVIDE AND CONQUER ALGORITHMS 
+
+Divide and Conquer solves a problem by:
+Step 1: Divide the problem into smaller subproblems.
+Step 2: Solve each subproblem independently.
+Step 3: Combine the results.
+
+Common examples:
+Merge Sort
+Quick Sort
+Binary Search
+
+Advantages:
+Faster execution
+Simplifies complex problems
+
+------------------------------------------------------------ 
+GREEDY ALGORITHMS 
+
+Greedy algorithms make the best local decision at every step.
+The goal is to reach a globally optimal solution.
+
+Characteristics:
+Chooses immediate best option
+Does not reconsider previous choices
+
+Examples:
+Activity Selection
+Huffman Coding
+Fractional Knapsack
+
+------------------------------------------------------------ 
+DYNAMIC PROGRAMMING 
+
+
+Dynamic Programming solves problems by storing previously computed results.
+It avoids performing the same calculations repeatedly.
+
+Key concepts:
+Overlapping Subproblems: The same problem appears multiple times.
+Optimal Substructure: The optimal solution can be built from optimal solutions of smaller problems.
+
+Examples:
+Fibonacci Numbers
+Longest Common Subsequence
+Knapsack Problem
+
+Advantages:
+Reduces execution time
+Eliminates redundant calculations
+
+------------------------------------------------------------ 
+BACKTRACKING ALGORITHMS 
+
+Backtracking builds a solution step by step.
+If a path cannot produce a valid solution, the algorithm returns to a previous step and tries another option.
+Think of it as: "Try → Check → Undo → Try Again"
+
+Examples:
+N Queens Problem
+Sudoku Solver
+Maze Problems
+
+------------------------------------------------------------ 
+GRAPH ALGORITHMS 
+
+Graph algorithms solve problems involving nodes and edges.
+Terminology: 
+Vertex (Node): Represents an object.
+Edge: Represents a connection between objects.
+
+Common operations:
+Traversal
+Connectivity
+Shortest Path
+Path Finding
+
+Examples:
+BFS (Breadth First Search)
+DFS (Depth First Search)
+Dijkstra's Algorithm
+
+Applications:
+GPS Navigation
+Social Networks
+Network Routing
+
+------------------------------------------------------------ 
+TREE ALGORITHMS 
+
+Tree algorithms work on hierarchical data structures.
+
+A tree consists of nodes connected in a parent-child relationship.
+
+Common operations:
+Traversal
+Searching
+Insertion
+Deletion
+
+Common traversals:
+Preorder
+Inorder
+Postorder
+Level Order
+
+Applications:
+File Systems
+Databases
+Search Engines
+
+------------------------------------------------------------ 
+MATHEMATICAL ALGORITHMS 
+
+Mathematical algorithms solve numerical and arithmetic problems.
+
+Examples:
+Prime Number Testing
+Greatest Common Divisor (GCD)
+Least Common Multiple (LCM)
+Modular Arithmetic
+
+Applications:
+Cryptography
+Competitive Programming
+Scientific Computing
+
+------------------------------------------------------------ 
+BIT MANIPULATION 
+
+Bit manipulation algorithms operate directly on binary digits (bits).
+
+Common operators:
+AND & OR | XOR ^ NOT ~ LEFT SHIFT << RIGHT SHIFT >>
+
+Advantages:
+Very fast execution
+Low memory usage
+
+Applications:
+Flags and Permissions
+Competitive Programming
+Data Compression
+Embedded Systems
+
+-------------------------------------------------------------
+APPLICATIONS OF ALGORITHMS 
+
+Algorithms are used in:
+Searching: Finding records and information quickly
+Sorting: Organizing data efficiently
+Networking: Routing and shortest path computation
+Databases: Searching and indexing data
+Artificial Intelligence: Decision making and optimization
+Cybersecurity: Encryption and authentication
+Operating Systems:Scheduling and memory management
+
+------------------------------------------------------------ 
+ADVANTAGES OF ALGORITHMS 
+
+Efficiency: Uses resources effectively
+Accuracy: Produces consistent results
+Reusability: Can be reused for similar problems
+Maintainability: Easier to understand and modify
+Scalability: Can handle increasing amounts of data
+Reliability: Produces predictable outcomes
+
+------------------------------------------------------------ 
+KEY DSA TERMS TO KNOW 
+
+Data Structure A way of organizing data for efficient access and modification.
+Algorithm A step-by-step procedure for solving a problem.
+
+Time Complexity The amount of time an algorithm takes as input size grows.
+Space Complexity The amount of memory an algorithm uses.
+Input Data given to an algorithm.
+Output The result produced by an algorithm.
+Optimization Improving efficiency by reducing time or memory usage.
+Problem Solving The process of designing algorithms to achieve a goal.
+
+------------------------------------------------------------ 
