@@ -5,6 +5,7 @@ __pycache__/
 
 # Jupyter
 .ipynb_c*eckpoints/
+*.jupyterlab-workspace
 
 # Virtual Environments*venv/
 .venv/
