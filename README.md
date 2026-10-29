@@ -1,24 +1,74 @@
-# DSA-Python-Journey
-This is a comprehensive repository for learning **Data Structures and Algorithms (DSA) using Python** by learning with textbook study, notes, hands-on coding, problem solving, visualizations, and real-world projects.
+# Data Science Algorithm Foundation
 
+## Welcome!
+
+Hello and welcome to this repository!
+
+This semester, I am taking a course on **Data Structures and Algorithms (DSA)** as part of my studies. Since DSA is a highly practical subject, I decided that simply attending lectures and reading course materials would not be enough. To gain a deeper understanding, I chose to actively study, practice, implement, and build projects alongside the course.
+
+This repository serves as the documentation of that journey.
+
+My goal is to strengthen my understanding of Data Structures and Algorithms through:
+
+- Textbook study
+- Note-taking
+- Hands-on coding
+- Problem solving
+- Visual learning
+- Project-based practice
+- Continuous revision
+
+Everything I learn, practice, and build throughout the semester will be documented here.
+
+I hope this repository becomes useful for others as well.
+
+If you're a student who is just starting Data Structures and Algorithms, feel free to use this repository as a learning reference and companion throughout your journey.
+
+If you're more experienced, whether a senior student, software engineer, or professional, your suggestions, corrections, feedback, and insights are always welcome. Learning is a continuous process, and I appreciate every opportunity to improve.
+
+Thank you for stopping by and welcome to the journey. 
 
 ---
 
-##  Objectives
+## Overview
+
+This repository is a comprehensive learning journal focused on **Data Structures and Algorithms using Python**.
+
+Rather than simply collecting solutions, the goal is to build a strong understanding of how data structures work, why algorithms matter, and how they can be applied to solve real-world problems efficiently.
+
+The repository combines:
+
+- Textbook Study
+- Personal Notes
+- Python Implementations
+- Practice Problems
+- Complexity Analysis
+- Visualizations
+- Revision Materials
+- Project-Based Learning
+
+Each topic is approached through a structured learning process:
+
+**Learn → Understand → Implement → Practice → Build → Revise**
+
+---
+
+## Objectives
 
 - Build a strong foundation in Data Structures and Algorithms
 - Develop efficient problem-solving skills
 - Master Python-based DSA implementations
-- Improve algorithmic thinking
+- Strengthen computational and algorithmic thinking
 - Prepare for technical interviews
-- Create practical DSA-driven projects
-- Maintain a knowledge base for future revision
+- Build practical DSA-powered projects
+- Maintain a personal knowledge base for revision and future reference
+- Track learning progress throughout the semester
 
 ---
 
-##  Learning Resources
+## Learning Resources
 
-### Books
+### Primary Textbooks
 
 1. **Data Structures and Algorithms with Python**
    - Kent D. Lee
@@ -30,216 +80,16 @@ This is a comprehensive repository for learning **Data Structures and Algorithms
    - Nishu Gupta
    - CRC Press (2024)
 
-### Online Resources
+### Supplementary Resources
 
 - GeeksforGeeks
-- Python Documentation
 - LeetCode
 - HackerRank
+- Python Documentation
 - Real Python
 - VisuAlgo
+- Microsoft Copilot
 
 ---
 
-##  Repository Structure
-
-```text
-DSA-Python-Journey/
-│
-├── README.md
-├── ROADMAP.md
-├── PROGRESS.md
-│
-├── notes/
-│
-├── implementations/
-│
-├── practice/
-│
-├── projects/
-│
-├── cheat_sheets/
-│
-├── revision/
-│
-├── visualizations/
-│
-├── benchmarks/
-│
-└── resources/
-```
-
----
-
-##  Notes
-
-Notes include:
-
-- Definitions
-- Concepts
-- Examples
-- Visual explanations
-- Advantages and disadvantages
-- Complexity analysis
-- Interview tips
-- Common mistakes
-
-Topics covered:
-
-- Arrays
-- Strings
-- Linked Lists
-- Stacks
-- Queues
-- Hash Tables
-- Trees
-- Binary Search Trees
-- Heaps
-- Graphs
-- Sorting Algorithms
-- Searching Algorithms
-- Recursion
-- Dynamic Programming
-- Greedy Algorithms
-- Backtracking
-
----
-
-##  Python Implementations
-
-Each topic includes clean and well-documented Python implementations.
-
-Examples:
-
-```text
-implementations/
-│
-├── arrays/
-├── linked_lists/
-├── stacks/
-├── queues/
-├── trees/
-├── heaps/
-├── graphs/
-├── sorting/
-└── searching/
-```
-
----
-
-##  Practice Problems
-
-Problems are organized by platform and topic.
-
-```text
-practice/
-│
-├── geeksforgeeks/
-├── leetcode/
-├── hackerrank/
-└── university_exercises/
-```
-
-Each solution includes:
-
-- Problem statement
-- Approach
-- Complexity analysis
-- Python solution
-
----
-
-## 📊 Complexity Analysis
-
-The repository includes complexity analysis for all major data structures and algorithms.
-
-### Big-O Cheat Sheet
-
-| Operation | Best | Average | Worst |
-|------------|----------|------------|----------|
-| Array Access | O(1) | O(1) | O(1) |
-| Array Search | O(1) | O(n) | O(n) |
-| BST Search | O(log n) | O(log n) | O(n) |
-| Hash Search | O(1) | O(1) | O(n) |
-| Merge Sort | O(n log n) | O(n log n) | O(n log n) |
-| Quick Sort | O(n log n) | O(n log n) | O(n²) |
-
----
-
-##  Projects
-
-### Beginner
-
-- Contact Book
-- Student Record System
-- Library Management System
-- Browser History Simulator
-- Music Playlist Manager
-
-### Intermediate
-
-- Task Scheduler
-- LRU Cache
-- Spell Checker Using Trie
-- Route Planner
-- Social Network Graph
-
-### Advanced
-
-- Search Engine Prototype
-- Recommendation System
-- Mini Google Maps
-- Algorithm Visualizer
-- Path Finding Visualizer
-
----
-
-##  Progress Tracker
-
-| Topic | Notes | Code | Practice | Revision |
-|---------|---------|---------|---------|---------|
-| Arrays | ✅ | ⬜ | ⬜ | ⬜ |
-| Strings | ⬜ | ⬜ | ⬜ | ⬜ |
-| Linked Lists | ⬜ | ⬜ | ⬜ | ⬜ |
-| Stacks | ⬜ | ⬜ | ⬜ | ⬜ |
-| Queues | ⬜ | ⬜ | ⬜ | ⬜ |
-| Trees | ⬜ | ⬜ | ⬜ | ⬜ |
-| Graphs | ⬜ | ⬜ | ⬜ | ⬜ |
-| Dynamic Programming | ⬜ | ⬜ | ⬜ | ⬜ |
-
----
-
-
-
-##  Current Focus
-
-- Python Fundamentals
-- Data Structures
-- Algorithm Analysis
-- Problem Solving
-- Interview Preparation
-- Project-Based Learning
-
----
-
-##  Future Goals
-
-- Complete both textbooks
-- Solve 200+ DSA problems
-- Build 10+ DSA projects
-- Master Dynamic Programming
-- Master Graph Algorithms
-- Master Advanced Tree Structures
-- Prepare for software engineering interviews
-
----
-
-##  Contributions
-
-This repository serves as my personal learning journal and portfolio. Suggestions, improvements, and discussions are always welcome.
-
----
-
-##  Motto
-
-> Learn → Implement → Practice → Build → Revise → Master
+> This repository is not meant to showcase perfection. It is meant to document growth, learning, mistakes, discoveries, and progress throughout my Data Structures and Algorithms journey.
